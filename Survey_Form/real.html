@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="real.css">
+    <script>
+      function addmore(){
+    var nam=document.getElementById("name")
+    const nValue=nam.value.trim()
+    if(nValue==''){
+    document.getElementById("error").innerHTML="*Enter the value"
+ return false;
+}else{
+    document.getElementById("error").style.visibility="hidden"
+}
+}
+    </script>
+</head>
+<body>
+  <!-- head - Googlefonts link -->
+
+<div id="outside">
+  <form id="survey-form"  action="/my-handling-form-page" method="post">
+    <h1 id="title">Bank Application Form </h1>
+    <p id="description"><b>Note:</b> Form is to be completed at least 21 days prior to date</p>
+
+    <!-- ------------------Personal Details---------------------------- -->
+    <fieldset>
+      <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+      <legend>Personal Details</legend>
+      <!-- formally describes the purpose of the fieldset it is included inside. -->
+      <div>
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="Enter name here">  
+        <span id="error"></span>
+      </div>
+     
+      <div>
+        <label for="address-label">Address:</label>
+        <input type="Address" id="address" name="Address" placeholder="Enter address here">  
+      </div>
+      <div>
+        <label id="email-label" for="Email">Email:</label>
+        <input type="email"  id="email" name="user_email" placeholder="Enter email here">  
+      </div>
+      <div>
+        <label id="number-label" for="phone">Phone Number:</label>
+        <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number"> 
+      </div>
+      <div>
+        <label id="iq-label" for="iq">Password:</label>
+        <input type="text" id="iq" name="iq" placeholder="Password">  
+      </div>
+      <div>
+        <label id="iq-label" for="iq">Confirm Password:</label>
+        <input type="text" id="iq" name="iq" placeholder="Confirm Password">  
+      </div>
+
+      <!-- ------------------Radio Buttons-------------------------------- -->
+      <div>
+        <label for="Gender">Gender</label>
+        <p>
+          <input type="radio" name="gender" value="male" checked> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+        </p>
+      </div>
+      <label for="date-label">Date of Registration:</label>
+      <input type="date" name="bday">
+
+    </fieldset>
+    <!-- ------------------Checkboxes-------------------------------- -->
+    <fieldset>
+      <label for="Gender"> Add ID Proof</label>
+      <p>
+        <input type="checkbox" name="tattoo" value="tattoo">Aadhar Card<br>
+        <input type="checkbox" name="age" value="Car">Pan Card<br>
+        <input type="checkbox" name="car" value="car">Voter ID Card<br>
+     </p>
+    </fieldset>
+
+    <!-- -----------------Dropdown menus--------------------------------- -->
+
+    <fieldset>
+      <div>
+        <label for="politics">Loan Available:</label>
+        <select id="dropdown">
+          <option value="left">Home Loan</option>
+          <option value="right">Education Loan</option>
+          <option value="conservative">Gold Loan</option>
+          <option value="nazi">Personal Loan</option>
+        </select>
+
+        <label for="politics">Education Level Completed:</label>
+        <select id="dropdown2">
+          <option >University</option>
+          <option >College</option>
+          <option >High School</option>
+          <option >None</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <!-- --------------------Text Areas------------------------------ -->
+
+    <fieldset>
+      <legend>Essay Section</legend>
+      <div>
+        <label for="msg"></label>
+        <p> In 50 words or more explain why you want to bank account</p>
+        <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>  
+      </div>
+      <div>
+        <label for="msg">Please upload contact details for 2 references</label><br>
+        <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>  
+      </div>
+      <p>Upload ID proof and Passport size Photo
+        <button>Attach Files</button>
+      </p>
+    </fieldset>
+
+    <div id="submitbutton">
+      <button type="submit" id="submit" onclick="return addmore()">Send your application</button>  
+    </div>
+
+  </form>
+</div>
+<script src="todo.js"></script>
+</body>
+
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->

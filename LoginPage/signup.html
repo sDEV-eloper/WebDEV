@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    } 
+    </script>
+<body>
+    <div class="main">
+        <div class="form">
+            <h1>Create New Account</h1>
+            <input type="text" name="" id="" placeholder="First Name">
+            <input type="text" name="" id="" placeholder="Last Name">
+            <input type="email" class="username" placeholder="Username or Email">
+            <input type="password" id="myInput" class="password" minlength="8" placeholder="Password">
+            <input type="checkbox" onclick="myFunction()" class="showPass"><span style="color: white;">Show Password</span> 
+            <input type="password" class="password" minlength="8" placeholder="Confirm Password">
+            <button class="signup"><a href="#">Sign Up</a></button>
+
+            <div class="icons">
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-google"></ion-icon>
+                </a>
+                <a href="#">
+                    <ion-icon name="logo-skype"></ion-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

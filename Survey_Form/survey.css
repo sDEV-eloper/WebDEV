@@ -1,0 +1,38 @@
+body{
+    border: 5px solid black;
+    margin: 10px 300px;
+    text-align: center;
+    padding: 10px 100px;
+    font-size: large;
+   
+
+}
+
+.details{
+    border: 1px solid black;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.essay_section{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.apply_section{
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+::selection{
+    color: red;
+    background-color: yellow;
+    outline: 5px;
+}
+
+section div h1::selection{
+    background-color: black;
+    color: white;
+}

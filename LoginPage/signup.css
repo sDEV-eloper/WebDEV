@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: url(signupbg.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+.form {
+    width: 250px;
+    height: 520px;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    padding: 25px;
+    margin-left: 0px;
+    transform: translate(-50%,-50%);
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transition: 1s;
+    
+  }
+  
+  .form h1 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 2px;
+    padding: 1px;
+    font-weight: bold;
+  }
+  
+  .form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+  }
+  .form .showPass {
+      width: 20px;
+      height: 15px;
+  }
+  
+  .form input:focus {
+    outline: none;
+  }
+  
+  ::placeholder {
+    color: rgba(255, 255, 255, 0.429);
+    font-family: Arial;
+  }
+  .form p a:hover{
+    color:blueviolet;
+    text-decoration: underline;
+  }
+
+  .signup {
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+  }
+  
+  .signup:hover {
+    color: black;
+  }
+  
+  .signup a {
+    color: rgb(81, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .signup:hover{
+    background-color: #ffcf90;
+  }
+  
+  .form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+
+.showPass{
+    color: white;
+}
