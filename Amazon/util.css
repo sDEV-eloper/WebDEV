@@ -1,0 +1,13 @@
+.flex-all-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+body{
+    background-image: url("landing4.jpg");
+    background-position: center;
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #0F1111;
+    
+}
+.second-header{
+    background-color: rgb(31, 47, 63);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.location{
+    color: white;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    margin: 19px;
+}
+.search-box{
+    align-items: center;
+    display:flex;
+}
+#search{
+height: 45px;
+border-radius: 7px;
+}
+#submit-btn{
+    height: 49px;
+    width: 55px;
+    background-color: rgb(254, 189, 105);
+    border-radius: 15%;
+    }
+
+.indian-flag {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}    
+.account-list{
+    color: white;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    margin: 19px;
+}
+
+.returns{
+    color: white;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    margin: 19px;
+    width: 10px;
+}
+.cart {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+.first-header{
+    display: flex;
+    margin: 0 10px;
+}
+.app-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+nav ul{
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style:none;
+    padding: 0 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+  
+}
+.container{
+    min-height: calc(100vh - 40px - 12vh);
+}
+footer{
+    height: 10vh;
+    background-color: #131A22;
+    color: rgba(255, 255, 255, 0.87);
+ 
+    
+}

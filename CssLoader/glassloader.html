@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Loader</title>
+</head>
+<body>
+    <div class="loader"></div>
+</body>
+<style>
+   
+    @keyframes load {
+        0%{
+         box-shadow: 0 0 #3bede7 inset;
+        }
+        100%{
+        box-shadow: 0 -70px #3b44ed inset; 
+        }
+    }
+    
+    body{
+        background:rgb(41, 42, 41);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.loader{
+    transform: perspective(140px) rotate(0deg);
+    width: 30px;
+    height: 72px;
+    position: relative;
+    border: 2px solid #fff;
+    animation: load 1.5s linear infinite alternate;
+}
+</style>
+</html>
